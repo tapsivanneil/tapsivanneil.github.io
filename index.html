@@ -1,32 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <ul class="nav_bar">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT ME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">PROJECTS</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
+
+
+<div class="home">
+  <section id="home" class="home_section">
+    <h1 class="name" text-align: center>Ivan Neil Tapel</h1>
+  
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-list">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
-<div class="field_1">
-    <img class="main_photo" src="img/banner_photo.png" alt="Ivan Neil's Photo">
+        </div>
+      </div>
+    </nav>
+    
+  <img src="img/main_photo.png" class="main_photo" srcset="">
+
+  </section>
 </div>
-    <div class="name">
-        <h1 class="">Ivan Neil</h1>
-        <h1 class="">Tapel</h1>
-    </div>
+
+<section id="about-me" class="about_me_section">
+  <h1>About Me</h1>
+  <p>I am a software developer. I love to code and create new things.</p>
+</section>
+
+<section id="projects">
+  <h1>Projects</h1>
+  <p>Here are some of my projects:</p>
+  <ul>
+    <li>A website for my portfolio</li>
+    <li>A game that I made in Python</li>
+    <li>A mobile app that I developed in Flutter</li>
+  </ul>
+</section>
+
+<section id="contacts">
+  <h1>Contacts</h1>
+  <p>You can contact me at:</p>
+  <ul>
+    <li>email: me@example.com</li>
+    <li>phone: 123-456-7890</li>
+    <li>LinkedIn: linkedin.com/in/me</li>
+  </ul>
+</section>
+
+
+
+
+
+<script>
+const navLinks = document.querySelectorAll(".nav-list a");
+
+navLinks.forEach(function(navLink) {
+  navLink.addEventListener("mouseenter", function() {
+    navLink.style.transform = "translateY(-0.1rem)";
+  });
+
+  navLink.addEventListener("mouseleave", function() {
+    navLink.style.transform = "";
+  });
+});
+
+</script>
 </body>
 </html>
