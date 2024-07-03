@@ -1655,6 +1655,7 @@ header {
 
 
 .footer__logo_container {
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1669,7 +1670,7 @@ header {
 
 
 .footer__logo_image {
-  width: 75%; /* Adjust the width as desired */
+  width: 55%; /* Adjust the width as desired */
 }
 
 
