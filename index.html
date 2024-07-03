@@ -140,6 +140,10 @@
     setInterval(updateLoadingText, 3000);
   </script>  
 
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
   <!-- ===================== CIRCLE BG ANIMATION LOOP ==================== -->
   <div class="circle_bubble__anim">
     <div></div>
@@ -837,31 +841,47 @@
       <div class="swiper-wrapper">
 
         <!-- Swipper Button 1 -->
+
         <div class="swiper-slide plang__card_btn">
           <ul class="plang__tabs">
             <!-- Items Inside -->
             <li class="plang__tabs_item">
               <button type="button" class="plang__button_link active"
-                onclick="showTab('java-content', this); changeBackgroundImage('assets/img/skills/java.svg')">
-                <i class="material-icons">code</i>Java
+                onclick="showTab('webdev-content', this); changeBackgroundImage('assets/img/skills/php.svg')"><i
+                  class="material-icons">code</i>Web</button>
             </li>
           </ul>
         </div>
 
         <!-- Swipper Button 2 -->
+        
         <div class="swiper-slide plang__card_btn">
           <ul class="plang__tabs">
             <!-- Items Inside -->
             <li class="plang__tabs_item">
               <button type="button" class="plang__button_link"
-                onclick="showTab('vb-content', this); changeBackgroundImage('assets/img/skills/vb.net.svg')"><i
-                  class="material-icons">code</i>VB</button>
+                onclick="showTab('godot-content', this); changeBackgroundImage('assets/img/skills/godot.svg')">
+                <i class="material-icons">code</i>Godot Engine
             </li>
           </ul>
-        </div>        
-
+        </div>     
+  
         <!-- Swipper Button 3 -->
+
         <div class="swiper-slide plang__card_btn">
+          <ul class="plang__tabs">
+            <!-- Items Inside -->
+            <li class="plang__tabs_item">
+              <button type="button" class="plang__button_link"
+                onclick="showTab('java-content', this); changeBackgroundImage('assets/img/skills/java.svg')">
+                <i class="material-icons">code</i>Java
+            </li>
+          </ul>
+        </div>
+        <!-- Swipper Button 4 -->
+
+
+         <div class="swiper-slide plang__card_btn">
           <ul class="plang__tabs">
             <!-- Items Inside -->
             <li class="plang__tabs_item">
@@ -872,29 +892,9 @@
           </ul>
         </div>
 
-        <!-- Swipper Button 4 -->
-        <div class="swiper-slide plang__card_btn">
-          <ul class="plang__tabs">
-            <!-- Items Inside -->
-            <li class="plang__tabs_item">
-              <button type="button" class="plang__button_link"
-                onclick="showTab('c-content', this); changeBackgroundImage('assets/img/skills/c.svg')"><i
-                  class="material-icons">code</i>C</button>
-            </li>
-          </ul>
-        </div>
-
         <!-- Swipper Button 5 -->
-        <div class="swiper-slide plang__card_btn">
-          <ul class="plang__tabs">
-            <!-- Items Inside -->
-            <li class="plang__tabs_item">
-              <button type="button" class="plang__button_link"
-                onclick="showTab('webdev-content', this); changeBackgroundImage('assets/img/skills/html.svg')"><i
-                  class="material-icons">code</i>Web</button>
-            </li>
-          </ul>
-        </div>
+
+
 
       </div>
 
@@ -911,13 +911,299 @@
 
 
     <!-- WHOLE Tab Content -->
+
+    <style>
+
+
+    .swiper-slide {
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 15px;
+      color: #fff;
+    
+    }
+    </style>
+
+    
     <div id="plang__tabContent">
 
-      <img class="projects__background" src="assets/img/skills/java.svg" alt="Background Image">
+      <img class="projects__background" src="assets/img/skills/php.svg" alt="Background Image">
 
+      <!-- Web Dev Tab Content -->
+      <div class="plang__tab_content active" id="webdev-content">
+
+        <!-- LIST OF PROJECTS CONTAINER -->
+        <div class="projects__container container swiper">
+
+          <!-- swiper wrapper -->
+          <div class="swiper-wrapper">
+
+            <!--==================== PROJECT 1 ====================-->
+            <div class="projects__content swiper-slide">
+                <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-1.png" alt="" srcset=""></swiper-slide>
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-2.png" alt="" srcset=""></swiper-slide>
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-3.png" alt="" srcset=""></swiper-slide>
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-4.png" alt="" srcset=""></swiper-slide>
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-5.png" alt="" srcset=""></swiper-slide>
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-6.png" alt="" srcset=""></swiper-slide>
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-7.png" alt="" srcset=""></swiper-slide>
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-8.png" alt="" srcset=""></swiper-slide>
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-9.png" alt="" srcset=""></swiper-slide>
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-10.png" alt="" srcset=""></swiper-slide>
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-11.png" alt="" srcset=""></swiper-slide>  
+                  <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-12.png" alt="" srcset=""></swiper-slide>
+                </swiper-container>
+              <div class="projects__data">
+                <h3 class="projects__title">Kabstore</h3>
+                <p class="projects__description">
+                  Kabstore is an e-commerce web application that aims to provide assistance with the process of selling products in our university. It allows user to buy, sell, and even manage their own store with ease.
+                </p>
+                <a href="https://github.com/tapsivanneil/MUMC-ChurchMgmtSystem_Java-PREVIEW" target="_blank"
+                  class="button button--flex button--small projects__button">
+                  Read More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+
+            <!--==================== PROJECT 2 ====================-->
+            <div class="projects__content swiper-slide">
+              <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-1.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-2.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-3.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-4.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-5.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-6.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-7.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-8.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-9.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-10.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-11.png" alt="" srcset=""></swiper-slide>  
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-12.png" alt="" srcset=""></swiper-slide>
+              </swiper-container>
+              <div class="projects__data">
+                <h3 class="projects__title">Person Academy Grading System</h3>
+                <p class="projects__description">
+                  This program aim to provide easy access to grading portal that allows teachers/admin to modify grading sheets and calculate grades with flexible formulas and criteria. Student’s would be able to access their grades through their respective accounts given by the administrator.
+                </p>
+                <a href="https://github.com/tapsivanneil/ZABSystem_Java-CODE" target="_blank"
+                  class="button button--flex button--small projects__button">
+                  Read More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+
+            <!--==================== PROJECT 3 ====================-->
+            <div class="projects__content swiper-slide">
+              <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-1.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-2.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-3.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-4.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-5.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-6.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-7.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-8.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-9.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-10.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-11.png" alt="" srcset=""></swiper-slide>  
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-12.png" alt="" srcset=""></swiper-slide>
+              </swiper-container>
+              <div class="projects__data">
+                <h3 class="projects__title">Unsaidn't</h3>
+                <p class="projects__description">
+                  Unsaidn’t is an anonymous messaging web application that allows user to send messaege anonoymously to anyone who has an account given that the user knows the target’s username. This is my first project that I create while using a database.
+                </p>
+                <a href="https://github.com/tapsivanneil/HSSG-EmpMgmtSystem_Java-PREVIEW" target="_blank"
+                  class="button button--flex button--small projects__button">
+                  Read More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+
+            <!--==================== PROJECT 4 ====================-->
+            <div class="projects__content swiper-slide">
+              <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-1.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-2.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-3.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-4.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-5.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-6.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-7.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-8.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-9.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-10.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-11.png" alt="" srcset=""></swiper-slide>  
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-12.png" alt="" srcset=""></swiper-slide>
+              </swiper-container>
+              <div class="projects__data">
+                <h3 class="projects__title">Binary Rush</h3>
+                <p class="projects__description">
+                  Binary Rush is a competitive online decimal to binary convertion game that aims to elevate students efficiency in converting Decimal to Binary.
+                </p>
+                <a href="https://github.com/tapsivanneil/EmployeePayrollManagementSystem_Java-CODE" target="_blank"
+                  class="button button--flex button--small projects__button">
+                  Read More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+
+            <!--==================== PROJECT 5 ====================-->
+            <div class="projects__content swiper-slide">
+              <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-1.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-2.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-3.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-4.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-5.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-6.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-7.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-8.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-9.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-10.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-11.png" alt="" srcset=""></swiper-slide>  
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-12.png" alt="" srcset=""></swiper-slide>
+              </swiper-container>
+              <div class="projects__data">
+                <h3 class="projects__title">Lost in to the Cyberspace</h3>
+                <p class="projects__description">
+                  Lost in to the Cyberspace is a web game that aims to test out students knowledge about Java Language by giving them questions to answer before reaching other levels
+                </p>
+                <a href="https://github.com/tapsivanneil/CTSSystem_Java-CODE" target="_blank"
+                  class="button button--flex button--small projects__button">
+                  Read More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PROJECT 6 ====================-->
+            <div class="projects__content swiper-slide">
+              <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-1.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-2.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-3.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-4.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-5.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-6.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-7.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-8.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-9.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-10.png" alt="" srcset=""></swiper-slide>
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-11.png" alt="" srcset=""></swiper-slide>  
+                <swiper-slide><img src="assets\img\projects\web\kabstore\kabstore-12.png" alt="" srcset=""></swiper-slide>
+              </swiper-container>
+              <div class="projects__data">
+                <h3 class="projects__title">EleMix</h3>
+                <p class="projects__description">
+                  EleMix ia a web application that allows the user to simulate different chemical compounds and shows an animation of mixing those chemical compounds
+                </p>
+                <a href="https://github.com/tapsivanneil/CTSSystem_Java-CODE" target="_blank"
+                  class="button button--flex button--small projects__button">
+                  Read More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            
+
+          </div> <!-- swiper wrapper -->
+
+          <!-- Add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-projects-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-projects-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+
+        </div><!-- LIST OF PROJECTS CONTAINER -->
+
+
+      </div><!-- Web Dev Tab Content -->
+
+      <!-- Godot Engine Tab Content -->
+      <div class="plang__tab_content " id="godot-content">
+
+
+        <!-- LIST OF PROJECTS CONTAINER -->
+        <div class="projects__container container swiper">
+
+          <!-- swiper wrapper -->
+          <div class="swiper-wrapper">
+
+
+            <!--==================== PROJECT 1 ====================-->
+            <div class="projects__content grid swiper-slide">
+              <img
+                src="https://raw.githubusercontent.com/tapsivanneil/MUMC-ChurchMgmtSystem_Java-PREVIEW/main/output-folder/console-video2.gif"
+                alt="Preview" class="projects__img" />
+              <div class="projects__data">
+                <h3 class="projects__title">Area52</h3>
+                <p class="projects__description">
+                  “Area 52” is a tower-defense strategic game where battlefield occurs in Area 51. A player will have the role of commander-general who is in-charge of placing defenders against the attack of mutated aliens. The game requires strategy-making and attention, highlighting the challenge of the game.
+                </p>
+                <a href="https://github.com/tapsivanneil/MUMC-ChurchMgmtSystem_Java-PREVIEW" target="_blank"
+                  class="button button--flex button--small projects__button">
+                  Read More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+
+            <!--==================== PROJECT 2 ====================-->
+            <div class="projects__content grid swiper-slide">
+              <img
+                src="https://raw.githubusercontent.com/tapsivanneil/ZABSystem_Java-CODE/main/output-media/console_video.gif"
+                alt="Preview" class="projects__img" />
+              <div class="projects__data">
+                <h3 class="projects__title">GraviShift</h3>
+                <p class="projects__description">
+                  GraviShift is a 2D playformer game that allows user to compete with 3 more playes in an endless run and who ever has the most elapsed time wins.
+                </p>
+                <a href="https://github.com/tapsivanneil/ZABSystem_Java-CODE" target="_blank"
+                  class="button button--flex button--small projects__button">
+                  Read More
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div> 
+
+          </div> <!-- swiper wrapper -->
+
+          <!-- Add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-projects-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-projects-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+
+        </div><!-- LIST OF PROJECTS CONTAINER -->
+
+
+      </div><!-- Godot Engine Content -->
 
       <!-- Java Tab Content -->
-      <div class="plang__tab_content active" id="java-content">
+      <div class="plang__tab_content " id="java-content">
 
 
         <!-- LIST OF PROJECTS CONTAINER -->
@@ -1040,95 +1326,6 @@
       </div><!-- Java Tab Content -->
 
 
-
-
-      <!-- VB Tab Content -->
-      <div class="plang__tab_content" id="vb-content">
-
-        <!-- LIST OF PROJECTS CONTAINER -->
-        <div class="projects__container container swiper">
-
-          <!-- swiper wrapper -->
-          <div class="swiper-wrapper">
-
-
-            <!--==================== PROJECT 1 ====================-->
-            <div class="projects__content grid swiper-slide">
-              <img
-                src="https://raw.githubusercontent.com/tapsivanneil/SalonReservationMgmtSystem_VB.NET-SAMPLE/main/output/ui_video.gif"
-                alt="Preview" class="projects__img" />
-              <div class="projects__data">
-                <h3 class="projects__title">Salon Reservation Mgmt. System</h3>
-                <p class="projects__description">
-                  Rach Salon Reservation Mgmt. System created using VB.NET with MySQL Database.
-                </p>
-                <a href="https://github.com/tapsivanneil/SalonReservationMgmtSystem_VB.NET-SAMPLE" target="_blank"
-                  class="button button--flex button--small projects__button">
-                  Read More
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-
-            <!--==================== PROJECT 2 ====================-->
-            <div class="projects__content grid swiper-slide">
-              <img
-                src="https://raw.githubusercontent.com/tapsivanneil/Log4Net_VB.NET-GUI/main/output/ui_log4net.gif"
-                alt="Preview" class="projects__img" />
-              <div class="projects__data">
-                <h3 class="projects__title">Log4Net Visual Basic .NET</h3>
-                <p class="projects__description">
-                  Basic Loggings on VB.NET using Log4Net Library.
-                </p>
-                <a href="https://github.com/tapsivanneil/Log4Net_VB.NET-GUI" target="_blank"
-                  class="button button--flex button--small projects__button">
-                  Read More
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <!--==================== PROJECT 3 ====================-->
-            <div class="projects__content grid swiper-slide">
-              <img
-                src="https://raw.githubusercontent.com/tapsivanneil/Add2Cart_VB.NET-GUI/main/output/ui_add2cart.gif"
-                alt="Preview" class="projects__img" />
-              <div class="projects__data">
-                <h3 class="projects__title">Add2Cart Feature VB.NET</h3>
-                <p class="projects__description">
-                  Add2Cart Feature on VB.NET with Managing Stocks and Reports.
-                </p>
-                <a href="https://github.com/tapsivanneil/Log4Net_VB.NET-GUI" target="_blank"
-                  class="button button--flex button--small projects__button">
-                  Read More
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-
-
-          </div><!-- swiper wrapper -->
-
-          <!-- Add arrows -->
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-projects-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-projects-icon"></i>
-          </div>
-
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-
-        </div><!-- LIST OF PROJECTS CONTAINER -->
-
-      </div><!-- VB Tab Content -->
-
-
-
-
       <!-- C++ Tab Content -->
       <div class="plang__tab_content" id="cpp-content">
 
@@ -1145,8 +1342,9 @@
               <img
                 src="https://raw.githubusercontent.com/tapsivanneil/Area-Console-Calculator_Cpp-Console/main/AreaComputationProgram_Emman/output-media/console_video.gif"
                 alt="Preview" class="projects__img" />
+                
               <div class="projects__data">
-                <h3 class="projects__title">Area Console Calculator</h3>
+                <h3 class="projects__title">First In First Out Algorithm</h3>
                 <p class="projects__description">
                   Area of Rectangle, Square, Triangle and Circle Console Calculator Program created using C++ Language.
                 </p>
@@ -1252,123 +1450,6 @@
 
 
       </div><!-- C++ Tab Content -->
-
-
-
-
-
-
-      <!-- C Tab Content -->
-      <div class="plang__tab_content" id="c-content">
-
-        <!-- LIST OF PROJECTS CONTAINER -->
-        <div class="projects__container container swiper">
-
-          <!-- swiper wrapper -->
-          <div class="swiper-wrapper">
-
-
-            <!--==================== PROJECT 1 ====================-->
-            <div class="projects__content grid swiper-slide">
-              <img
-                src="https://raw.githubusercontent.com/tapsivanneil/SimNumber-prefix-finder_C-Language/main/SimNumber-prefix-finder_C-Language/output-media/console_video.gif"
-                alt="Preview" class="projects__img" />
-              <div class="projects__data">
-                <h3 class="projects__title">SimCard Number Prefix Finder</h3>
-                <p class="projects__description">
-                  SimCard Phone Number Prefix/Network Finder Console System created using C Language.
-                </p>
-                <a href="https://github.com/tapsivanneil/SimNumber-prefix-finder_C-Language" target="_blank"
-                  class="button button--flex button--small projects__button">
-                  Read More
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <!--==================== PROJECT 2 ====================-->
-            <div class="projects__content grid swiper-slide">
-              <img
-                src="https://raw.githubusercontent.com/tapsivanneil/MetersToKM_HoursToSeconds-Calculator_C-Language/main/MetersToKM_HoursToSeconds-Calculator_C-Language/output-media/console_video.gif"
-                alt="Preview" class="projects__img" />
-              <div class="projects__data">
-                <h3 class="projects__title">Meters to KM & Hours to Seconds Calculator</h3>
-                <p class="projects__description">
-                  Console Based Calculator for Meters to KM and Hours to Seconds created using C Language.
-                </p>
-                <a href="https://github.com/tapsivanneil/MetersToKM_HoursToSeconds-Calculator_C-Language"
-                  target="_blank" class="button button--flex button--small projects__button">
-                  Read More
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-          </div><!-- swiper wrapper -->
-
-          <!-- Add arrows -->
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-projects-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-projects-icon"></i>
-          </div>
-
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-
-        </div><!-- LIST OF PROJECTS CONTAINER -->
-
-
-      </div><!-- C Tab Content -->
-
-
-
-
-
-      <!-- WEBDEV Content -->
-      <div class="plang__tab_content" id="webdev-content">
-
-        <!-- LIST OF PROJECTS CONTAINER -->
-        <div class="projects__container container swiper">
-
-          <!-- swiper wrapper -->
-          <div class="swiper-wrapper">
-
-
-            <!--==================== PROJECT 1 ====================-->
-            <div class="projects__content grid swiper-slide">
-              <img src="https://raw.githubusercontent.com/tapsivanneil/GIT.RAWify/main/output/screen_record_gif2.gif"
-                alt="Preview" class="projects__img" />
-              <div class="projects__data">
-                <h3 class="projects__title">GIT-RAWify</h3>
-                <p class="projects__description">
-                  Convert GitHub Link to Raw Link
-                </p>
-                <a href="https://git-rawify.vercel.app/"
-                  target="_blank" class="button button--flex button--small projects__button">
-                  Visit
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-          </div><!-- swiper wrapper -->
-
-          <!-- Add arrows -->
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-projects-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-projects-icon"></i>
-          </div>
-
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-
-        </div><!-- LIST OF PROJECTS CONTAINER -->
-
-      </div><!-- WEB DEV Content -->
 
 
     </div><!-- WHOLE Tab Content -->
