@@ -898,7 +898,7 @@ btn.addEventListener('click', function (e) {
   var message = document.getElementById('message__SendEmail').value;
 
   var body =
-    '<h2><b>Email from emmanpbarrameda.github.io Portfolio</b></h2></b></b> <b>Name:</b> ' + name +
+    '<h2><b>Email from tapsivanneil.github.io Portfolio</b></h2></b></b> <b>Name:</b> ' + name +
     '<br/><b>Email of Sender:</b> ' + email +
     '<br/><b>Project:</b> ' + project +
     '<br/><b>Current Date and Time:</b> ' + formattedDateTime +
@@ -919,8 +919,8 @@ btn.addEventListener('click', function (e) {
     // Send email
     Email.send({
       SecureToken: '1f65e506-47fb-4a9e-be61-7672897dc243',
-      To: 'emmanuelbarrameda1@gmail.com',
-      From: 'emmanuelbarrameda2@gmail.com',
+      To: 'tapsivanneil@gmail.com',
+      From: 'tapsivanneil@gmail.com',
       Subject: subject,
       Body: body
     })
