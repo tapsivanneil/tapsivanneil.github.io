@@ -919,7 +919,7 @@ btn.addEventListener('click', function (e) {
     // Send email
     Email.send({
       SecureToken: '9bd52a71-cbfd-48a9-bc39-7586fba8ed9a',
-      To: 'ivanneil.tapel@cvsu.edu.ph',
+      To: 'tapsivanneil@gmail.com',
       From: 'tapsivanneil@gmail.com',
       Subject: subject,
       Body: body
@@ -928,10 +928,10 @@ btn.addEventListener('click', function (e) {
         showAlertToast(message + ' Success', 'Your message was sent successfully!', 'uil-check');
 
         // Clear input fields
-        document.getElementById('name__SendEmail').value = '';
-        document.getElementById('email__SendEmail').value = '';
-        document.getElementById('project__SendEmail').value = '';
-        document.getElementById('message__SendEmail').value = '';
+        // document.getElementById('name__SendEmail').value = '';
+        // document.getElementById('email__SendEmail').value = '';
+        // document.getElementById('project__SendEmail').value = '';
+        // document.getElementById('message__SendEmail').value = '';
 
       })
       .catch(function (error) {
