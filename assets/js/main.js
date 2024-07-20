@@ -918,8 +918,8 @@ btn.addEventListener('click', function (e) {
 
     // Send email
     Email.send({
-      SecureToken: '1f65e506-47fb-4a9e-be61-7672897dc243',
-      To: 'tapsivanneil@gmail.com',
+      SecureToken: '9bd52a71-cbfd-48a9-bc39-7586fba8ed9a',
+      To: 'ivanneil.tapel@cvsu.edu.ph',
       From: 'tapsivanneil@gmail.com',
       Subject: subject,
       Body: body
